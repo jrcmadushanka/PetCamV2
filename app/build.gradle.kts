@@ -1,17 +1,13 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id("petcam.android.application")
     alias(libs.plugins.kotlin.compose)
 }
 
 android {
     namespace = "com.civdevops.petcamv2"
-    compileSdk {
-        version = release(37)
-    }
 
     defaultConfig {
         applicationId = "com.civdevops.petcamv2"
-        minSdk = 24
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
@@ -26,10 +22,7 @@ android {
             }
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
+
     buildFeatures {
         compose = true
     }
