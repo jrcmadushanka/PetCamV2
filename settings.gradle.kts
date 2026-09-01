@@ -1,4 +1,6 @@
 pluginManagement {
+    includeBuild("build-logic")
+
     repositories {
         google {
             content {
@@ -24,4 +26,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "PetCamV2"
 include(":app")
- 
