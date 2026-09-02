@@ -1,6 +1,7 @@
 plugins {
     id("petcam.android.application")
     id("petcam.android.compose")
+    id("petcam.hilt")
 }
 
 android {
