@@ -1,4 +1,8 @@
+@file:Suppress("UnstableApiUsage")
+
 pluginManagement {
+    includeBuild("build-logic")
+
     repositories {
         google {
             content {
@@ -23,5 +27,20 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "PetCamV2"
+
 include(":app")
- 
+include(":domain")
+include(":core:model")
+include(":core:designsystem")
+include(":core:common")
+include(":core:ui")
+include(":core:testing")
+include(":data:camera")
+include(":data:media")
+include(":data:audio")
+include(":data:settings")
+include(":data:share")
+include(":feature:camera")
+include(":feature:gallery")
+include(":feature:mediaviewer")
+include(":feature:settings")

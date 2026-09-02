@@ -1,17 +1,14 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.compose)
+    id("petcam.android.application")
+    id("petcam.android.compose")
+    id("petcam.hilt")
 }
 
 android {
     namespace = "com.civdevops.petcamv2"
-    compileSdk {
-        version = release(37)
-    }
 
     defaultConfig {
         applicationId = "com.civdevops.petcamv2"
-        minSdk = 24
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
@@ -26,16 +23,11 @@ android {
             }
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    buildFeatures {
-        compose = true
-    }
 }
 
 dependencies {
+    implementation(project(":core:designsystem"))
+
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)
