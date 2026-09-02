@@ -12,6 +12,8 @@ material = "1.14.0"
 appcompat = "1.8.0"
 ksp = "2.3.11"
 hilt = "2.60.1"
+appcompatVersion = "1.8.0"
+materialVersion = "1.14.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -39,6 +41,8 @@ hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hil
 
 hilt-gradlePlugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hilt" }
 ksp-gradlePlugin = { module = "com.google.devtools.ksp:symbol-processing-gradle-plugin", version.ref = "ksp" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompatVersion" }
+material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
 
 [plugins]
 
