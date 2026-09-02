@@ -1,6 +1,6 @@
 plugins {
     id("petcam.android.application")
-    alias(libs.plugins.kotlin.compose)
+    id("petcam.android.compose")
 }
 
 android {
@@ -22,13 +22,11 @@ android {
             }
         }
     }
-
-    buildFeatures {
-        compose = true
-    }
 }
 
 dependencies {
+    implementation(project(":core:designsystem"))
+
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)

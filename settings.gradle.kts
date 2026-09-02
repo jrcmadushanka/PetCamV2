@@ -27,5 +27,6 @@ dependencyResolutionManagement {
 rootProject.name = "PetCamV2"
 
 include(":app")
-include(":core:model")
 include(":domain")
+include(":core:model")
+include(":core:designsystem")

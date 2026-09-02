@@ -1,4 +1,4 @@
-package com.civdevops.petcamv2.ui.theme
+package com.civdevops.petcamv2.core.designsystem.theme
 
 import androidx.compose.ui.graphics.Color
 
