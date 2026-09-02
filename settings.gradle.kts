@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 pluginManagement {
     includeBuild("build-logic")
 
@@ -33,5 +35,8 @@ include(":core:designsystem")
 include(":core:common")
 include(":core:ui")
 include(":core:testing")
-include(":data")
 include(":data:camera")
+include(":data:media")
+include(":data:audio")
+include(":data:settings")
+include(":data:share")

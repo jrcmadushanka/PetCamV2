@@ -31,7 +31,11 @@
             <option value="$PROJECT_DIR$/core/testing" />
             <option value="$PROJECT_DIR$/core/ui" />
             <option value="$PROJECT_DIR$/data" />
+            <option value="$PROJECT_DIR$/data/audio" />
             <option value="$PROJECT_DIR$/data/camera" />
+            <option value="$PROJECT_DIR$/data/media" />
+            <option value="$PROJECT_DIR$/data/settings" />
+            <option value="$PROJECT_DIR$/data/share" />
             <option value="$PROJECT_DIR$/domain" />
           </set>
         </option>
