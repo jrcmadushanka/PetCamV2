@@ -11,47 +11,87 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = PurpleLight,
+    onPrimary = Black,
+
+    primaryContainer = PurpleDark,
+    onPrimaryContainer = White,
+
+    secondary = Gray,
+    onSecondary = Black,
+
+    secondaryContainer = SurfaceVariant,
+    onSecondaryContainer = White,
+
+    background = Black,
+    onBackground = White,
+
+    surface = Surface,
+    onSurface = White,
+
+    surfaceVariant = SurfaceVariant,
+    onSurfaceVariant = Gray,
+
+    outline = GrayDark,
+
+    error = ErrorRed,
+    onError = White,
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = Purple,
+    onPrimary = White,
 
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    primaryContainer = PurpleLight,
+    onPrimaryContainer = Black,
+
+    secondary = GrayDark,
+    onSecondary = White,
+
+    secondaryContainer = White,
+    onSecondaryContainer = Black,
+
+    background = White,
+    onBackground = Black,
+
+    surface = White,
+    onSurface = Black,
+
+    surfaceVariant = SurfaceVariant,
+    onSurfaceVariant = Gray,
+
+    outline = Gray,
+
+    error = ErrorRed,
+    onError = White,
 )
 
 @Composable
-fun PetCamV2Theme(
+fun PetCamTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
-    content: @Composable () -> Unit
+    dynamicColor: Boolean = false,
+    content: @Composable () -> Unit,
 ) {
     val colorScheme = when {
         dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val context = LocalContext.current
-            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+
+            if (darkTheme) {
+                dynamicDarkColorScheme(context)
+            } else {
+                dynamicLightColorScheme(context)
+            }
         }
 
         darkTheme -> DarkColorScheme
+
         else -> LightColorScheme
     }
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
-        content = content
+        typography = PetCamTypography,
+        shapes = PetCamShapes,
+        content = content,
     )
 }
