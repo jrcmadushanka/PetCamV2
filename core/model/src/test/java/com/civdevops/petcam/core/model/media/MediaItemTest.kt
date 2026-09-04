@@ -1,5 +1,6 @@
 package com.civdevops.petcam.core.model.media
 
+import com.civdevops.petcam.core.model.MediaId
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
@@ -51,7 +52,7 @@ class MediaItemTest {
     @Test
     fun `video rejects negative creation time`() {
         assertFailsWith<IllegalArgumentException> {
-            MediaItem.Video(
+            MediaItem .Video(
                 id = MediaId("video-1"),
                 createdAtEpochMillis = -1L,
                 durationMillis = 5_000L,

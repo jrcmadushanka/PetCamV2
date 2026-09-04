@@ -1,6 +1,5 @@
 package com.civdevops.petcam.core.model
 
-import com.civdevops.petcam.core.model.media.MediaId
 import junit.framework.TestCase.assertEquals
 import kotlin.test.Test
 import kotlin.test.assertFailsWith

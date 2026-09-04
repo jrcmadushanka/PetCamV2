@@ -1,5 +1,7 @@
 package com.civdevops.petcam.core.model.media
 
+import com.civdevops.petcam.core.model.MediaId
+
 sealed interface MediaItem {
 
     val id: MediaId
