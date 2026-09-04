@@ -10,11 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PetCamV2">
+        android:theme="@style/Theme.PetCam">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.PetCamV2.Starting"
+            android:theme="@style/Theme.PetCam.Starting"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

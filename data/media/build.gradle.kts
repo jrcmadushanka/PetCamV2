@@ -3,5 +3,5 @@ plugins {
 }
 
 android {
-    namespace = "com.civdevops.petcamv2.data.media"
+    namespace = "com.civdevops.petcam.data.media"
 }

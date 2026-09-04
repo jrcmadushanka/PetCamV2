@@ -3,5 +3,5 @@ plugins {
 }
 
 android {
-    namespace = "com.civdevops.petcamv2.data.audio"
+    namespace = "com.civdevops.petcam.data.audio"
 }

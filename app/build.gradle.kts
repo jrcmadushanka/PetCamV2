@@ -5,10 +5,10 @@ plugins {
 }
 
 android {
-    namespace = "com.civdevops.petcamv2"
+    namespace = "com.civdevops.petcam"
 
     defaultConfig {
-        applicationId = "com.civdevops.petcamv2"
+        applicationId = "com.civdevops.petcam"
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"

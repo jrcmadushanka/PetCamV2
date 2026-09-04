@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.civdevops.petcamv2.core.designsystem"
+    namespace = "com.civdevops.petcam.core.designsystem"
 }
 
 dependencies {
