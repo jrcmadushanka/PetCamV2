@@ -4,7 +4,7 @@
     <style name="Theme.PetCamV2" parent="android:Theme.Material.Light.NoActionBar" />
 
     <style name="Theme.PetCamV2.Starting" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@android:color/black</item>
+        <item name="windowSplashScreenBackground">@color/purple_dark</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
         <item name="postSplashScreenTheme">@style/Theme.PetCamV2</item>
     </style>
