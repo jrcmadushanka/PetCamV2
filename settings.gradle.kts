@@ -26,7 +26,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PetCamV2"
+rootProject.name = "PetCam"
 
 include(":app")
 include(":domain")

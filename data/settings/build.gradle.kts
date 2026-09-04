@@ -3,5 +3,5 @@ plugins {
 }
 
 android {
-    namespace = "com.civdevops.petcamv2.data.settings"
+    namespace = "com.civdevops.petcam.data.settings"
 }

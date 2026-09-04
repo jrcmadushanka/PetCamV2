@@ -5,10 +5,10 @@ plugins {
 }
 
 android {
-    namespace = "com.civdevops.petcamv2"
+    namespace = "com.civdevops.petcam"
 
     defaultConfig {
-        applicationId = "com.civdevops.petcamv2"
+        applicationId = "com.civdevops.petcam"
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
@@ -36,6 +36,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.core.splashscreen)
+
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)

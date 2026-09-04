@@ -68,7 +68,7 @@ $output = (Resolve-Path $OutputDirectory).Path
 $sourceName = Split-Path $source -Leaf
 
 if ([string]::IsNullOrWhiteSpace($sourceName)) {
-    $sourceName = "PetCamV2"
+    $sourceName = "PetCam"
 }
 
 $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"

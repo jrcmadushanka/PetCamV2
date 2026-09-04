@@ -4,5 +4,5 @@ plugins {
 }
 
 android {
-    namespace = "com.civdevops.petcamv2.feature.mediaviewer"
+    namespace = "com.civdevops.petcam.feature.mediaviewer"
 }

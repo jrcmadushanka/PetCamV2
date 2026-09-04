@@ -4,5 +4,5 @@ plugins {
 }
 
 android {
-    namespace = "com.civdevops.petcamv2.core.ui"
+    namespace = "com.civdevops.petcam.core.ui"
 }

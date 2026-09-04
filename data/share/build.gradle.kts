@@ -3,5 +3,5 @@ plugins {
 }
 
 android {
-    namespace = "com.civdevops.petcamv2.data.share"
+    namespace = "com.civdevops.petcam.data.share"
 }
