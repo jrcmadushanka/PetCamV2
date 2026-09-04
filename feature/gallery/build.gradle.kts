@@ -4,5 +4,5 @@ plugins {
 }
 
 android {
-    namespace = "com.civdevops.petcam.data.gallery"
+    namespace = "com.civdevops.petcam.feature.gallery"
 }
